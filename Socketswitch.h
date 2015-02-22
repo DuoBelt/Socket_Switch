@@ -17,8 +17,8 @@
 #define SYNC_DELAY   (29*SHORT_DELAY)
 
 #define REPEATS      3
-#define ON           0
-#define OFF          1
+#define SET_ON           0
+#define SET_OFF          1
 
 
 class Socketswitch

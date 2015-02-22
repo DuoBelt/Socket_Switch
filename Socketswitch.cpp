@@ -14,35 +14,35 @@ void Socketswitch::setDevice(unsigned long device) {
 }
 
 void Socketswitch::groupOn() {
-  cmd(_device,0, ON, ON);
+  cmd(_device,0, SET_ON, SET_ON);
 }
 
 void Socketswitch::groupOff() {
-  cmd(_device,0, ON, OFF);
+  cmd(_device,0, SET_ON, SET_OFF);
 }
 
 void Socketswitch::groupOn(unsigned long device) {
-  cmd(device,0, ON, ON);
+  cmd(device,0, SET_ON, SET_ON);
 }
 
 void Socketswitch::groupOff(unsigned long device) {
-  cmd(device,0, ON, OFF);
+  cmd(device,0, SET_ON, SET_OFF);
 }
 
 void Socketswitch::channelOn(byte channel){
-  cmd(_device,channel, OFF, ON);
-}
+  cmd(_device,channel, SET_OFF, SET_ON);
+}	
 
 void Socketswitch::channelOff(byte channel){
-  cmd(_device,channel, OFF, OFF);
+  cmd(_device,channel, SET_OFF, SET_OFF);
 }
 
 void Socketswitch::channelOn(unsigned long device, byte channel){
-  cmd(device,channel, OFF, ON);
+  cmd(device,channel, SET_OFF, SET_ON);
 }
 
 void Socketswitch::channelOff(unsigned long device, byte channel){
-  cmd(device,channel, OFF, OFF);
+  cmd(device,channel, SET_OFF, SET_OFF);
 }
 
 void Socketswitch::zero() {
