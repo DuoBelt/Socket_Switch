@@ -7,4 +7,4 @@ After first spending time trying to decode a remote controller for the JULA swit
 
 http://elektronikforumet.com/wiki/index.php/RF_Protokoll_-_JULA-Anslut 
 
-which made it a lot easier to make the library.
+which made it a lot easier to make the library. All credits should go to Jesper Hansen who managed to decode the protocol.
